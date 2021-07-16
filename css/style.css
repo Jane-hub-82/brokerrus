@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Roboto:wght@300;400;700&display=swap");
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1.2;
+  height: 100%;
+}
+
+ol {
+  padding-left: 1.4em;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 1.4em;
+  list-style: square;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input, textarea {
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
+
+.header_title {
+  padding: 15px 0 35px 0;
+  -webkit-box-shadow: 0 3px 6px rgba(173, 255, 0, 0.2);
+          box-shadow: 0 3px 6px rgba(173, 255, 0, 0.2);
+}
+.header_title p:first-child {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 56px;
+  color: #adff00;
+}
+.header_title p:last-child {
+  font-family: "Baloo 2";
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 28px;
+  color: #4d4c4c;
+}
+
+.header_title-name::before {
+  content: "";
+  background: url("../images/logo.svg") no-repeat;
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  padding-right: 18px;
+}
+
+.cards {
+  padding: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 370px;
+  height: 470px;
+  background: #fff;
+  border-radius: 43px;
+  -webkit-box-shadow: 0 0 4px 5px rgba(106, 103, 103, 0.2);
+          box-shadow: 0 0 4px 5px rgba(106, 103, 103, 0.2);
+  margin: 15px auto;
+}
+
+.card_name img {
+  width: 294px;
+  height: 75px;
+  margin-top: 30px;
+}
+
+.card_conditions {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #8d8d8d;
+}
+.card_conditions p {
+  padding-bottom: 10px;
+  line-height: 40px;
+}
+.card_conditions p.percent:before {
+  content: "";
+  background: url("../images/icons/percent .svg") no-repeat;
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
+}
+.card_conditions p.sum:before {
+  content: "";
+  background: url("../images/icons/money.svg") no-repeat;
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
+}
+.card_conditions p.age:before {
+  content: "";
+  background: url("../images/icons/person.svg") no-repeat;
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
+}
+.card_conditions p.term:before {
+  content: "";
+  background: url("../images/icons/calendar.svg") no-repeat;
+  position: relative;
+  float: left;
+  width: 40px;
+  height: 40px;
+  padding-right: 10px;
+}
+
+.card_button {
+  background: #ADFF00;
+  width: 322px;
+  height: 90px;
+  border-radius: 24px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 3.6rem;
+  line-height: 90px;
+  display: block;
+}
