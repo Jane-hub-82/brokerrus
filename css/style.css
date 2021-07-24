@@ -411,6 +411,7 @@ a {
 }
 
 .info p {
+  text-align: justify;
   text-indent: 25px;
   font-family: "Roboto";
   font-weight: 400;
