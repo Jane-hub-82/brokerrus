@@ -149,6 +149,11 @@ html {
   -webkit-box-shadow: 0 3px 6px rgba(173, 255, 0, 0.2);
           box-shadow: 0 3px 6px rgba(173, 255, 0, 0.2);
 }
+@media (max-width: 600px) {
+  .header_title {
+    padding-bottom: 25px;
+  }
+}
 .header_title p:first-child {
   font-family: "Roboto";
   font-weight: bold;
@@ -156,12 +161,36 @@ html {
   line-height: 56px;
   color: #adff00;
 }
+@media (max-width: 400px) {
+  .header_title p:first-child {
+    font-size: 4rem;
+    line-height: 48px;
+  }
+}
+@media (max-width: 380px) {
+  .header_title p:first-child {
+    font-size: 3.6rem;
+    line-height: 40px;
+  }
+}
 .header_title p:last-child {
   font-family: "Baloo 2";
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 28px;
   color: #4d4c4c;
+}
+@media (max-width: 600px) {
+  .header_title p:last-child {
+    font-size: 1.4rem;
+    line-height: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .header_title p:last-child {
+    font-size: 1.2rem;
+    line-height: 18px;
+  }
 }
 
 .header_title-name::before {
@@ -173,6 +202,18 @@ html {
   height: 100px;
   padding-right: 18px;
 }
+@media (max-width: 600px) {
+  .header_title-name::before {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 380px) {
+  .header_title-name::before {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .cards {
   padding: 70px 0;
@@ -181,6 +222,12 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .cards {
+    padding: 30px 0;
+  }
 }
 
 .card {
@@ -194,19 +241,46 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 370px;
-  height: 470px;
+  width: 350px;
+  height: 450px;
   background: #fff;
   border-radius: 43px;
   -webkit-box-shadow: 0 0 4px 5px rgba(106, 103, 103, 0.2);
           box-shadow: 0 0 4px 5px rgba(106, 103, 103, 0.2);
   margin: 15px auto;
 }
+@media (max-width: 1150px) {
+  .card {
+    width: 330px;
+    height: 430px;
+  }
+}
+@media (max-width: 400px) {
+  .card {
+    width: 280px;
+    height: 380px;
+  }
+}
 
+.card_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .card_name img {
   width: 294px;
-  height: 75px;
-  margin-top: 30px;
+  height: 60px;
+  margin-top: 25px;
+}
+@media (max-width: 400px) {
+  .card_name img {
+    width: 250px;
+    height: 50px;
+    margin-top: 20px;
+  }
 }
 
 .card_conditions {
@@ -214,6 +288,11 @@ html {
   font-weight: 500;
   font-size: 1.8rem;
   color: #8d8d8d;
+}
+@media (max-width: 400px) {
+  .card_conditions {
+    font-size: 1.4rem;
+  }
 }
 .card_conditions p {
   padding-bottom: 10px;
@@ -228,6 +307,14 @@ html {
   height: 40px;
   padding-right: 10px;
 }
+@media (max-width: 400px) {
+  .card_conditions p.percent:before {
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    margin-top: 5px;
+  }
+}
 .card_conditions p.sum:before {
   content: "";
   background: url("../images/icons/money.svg") no-repeat;
@@ -236,6 +323,14 @@ html {
   width: 40px;
   height: 40px;
   padding-right: 10px;
+}
+@media (max-width: 400px) {
+  .card_conditions p.sum:before {
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    margin-top: 5px;
+  }
 }
 .card_conditions p.age:before {
   content: "";
@@ -246,6 +341,14 @@ html {
   height: 40px;
   padding-right: 10px;
 }
+@media (max-width: 400px) {
+  .card_conditions p.age:before {
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    margin-top: 5px;
+  }
+}
 .card_conditions p.term:before {
   content: "";
   background: url("../images/icons/calendar.svg") no-repeat;
@@ -254,6 +357,14 @@ html {
   width: 40px;
   height: 40px;
   padding-right: 10px;
+}
+@media (max-width: 400px) {
+  .card_conditions p.term:before {
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    margin-top: 5px;
+  }
 }
 
 .card_button {
@@ -264,6 +375,19 @@ html {
   text-align: center;
   margin-top: 30px;
 }
+@media (max-width: 1150px) {
+  .card_button {
+    width: 300px;
+    height: 70px;
+  }
+}
+@media (max-width: 400px) {
+  .card_button {
+    width: 250px;
+    height: 60px;
+    margin-top: 10px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -273,4 +397,23 @@ a {
   font-size: 3.6rem;
   line-height: 90px;
   display: block;
+}
+@media (max-width: 1150px) {
+  a {
+    line-height: 70px;
+  }
+}
+@media (max-width: 400px) {
+  a {
+    font-size: 2.6rem;
+    line-height: 60px;
+  }
+}
+
+.info p {
+  text-indent: 25px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.4rem;
+  padding-bottom: 60px;
 }
